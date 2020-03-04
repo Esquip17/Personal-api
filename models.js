@@ -9,7 +9,7 @@ const language = new Schema({
 const Country = new Schema({
   name: String,
   capital: String,
-  language: [language]
+  language: {}
 });
 
 module.exports = mongoose.model("Country", Country);
