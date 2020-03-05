@@ -6,7 +6,7 @@ const Country = require("./models");
 app.use(parser.json());
 
 app.get("/models", function(req, res) {
-  Countrh.find({}).then(Country => {
+  Country.find({}).then(Country => {
     res.json(Country);
   });
 });
